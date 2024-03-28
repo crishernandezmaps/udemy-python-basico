@@ -541,3 +541,81 @@ Las listas y las tuplas son estructuras de datos fundamentales en Python con sus
 
 ---
 
+# Estructuras de Datos en Python: Diccionarios y Conjuntos
+
+## Introducción
+Profundizando en las estructuras de datos de Python, exploraremos ahora los diccionarios y los conjuntos. Estas estructuras ofrecen maneras únicas de almacenar y manipular datos, cada una con sus características y casos de uso específicos.
+
+## Diccionarios
+Los diccionarios en Python son colecciones no ordenadas de pares clave-valor. Permiten almacenar datos de manera que se puedan recuperar eficientemente usando una clave.
+
+### Creación de Diccionarios
+```python
+persona = {
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudad": "Madrid"
+}
+print(persona)
+```
+
+### Acceso a Elementos
+```python
+print(persona["nombre"])  # Muestra "Juan"
+```
+
+### Añadir o Modificar Elementos
+```python
+persona["profesión"] = "Ingeniero"
+print(persona)  # Añade o actualiza la clave "profesión"
+```
+
+### Eliminar Elementos
+```python
+del persona["edad"]
+print(persona)  # Elimina la clave "edad"
+```
+
+## Conjuntos
+Los conjuntos (sets) son colecciones no ordenadas, modificables, pero sin elementos duplicados. Son ideales para la eliminación de duplicados y las operaciones matemáticas de conjuntos.
+
+### Creación de Conjuntos
+```python
+frutas = {"manzana", "banana", "cereza"}
+print(frutas)
+```
+
+### Añadir Elementos
+```python
+frutas.add("naranja")
+print(frutas)
+```
+
+### Eliminar Elementos
+```python
+frutas.remove("banana")
+print(frutas)  # Elimina "banana" del conjunto
+```
+
+### Operaciones de Conjuntos
+Los conjuntos soportan operaciones matemáticas como unión, intersección, diferencia y diferencia simétrica.
+
+#### Unión
+```python
+conjunto_a = {1, 2, 3}
+conjunto_b = {3, 4, 5}
+union = conjunto_a.union(conjunto_b)
+print(union)  # {1, 2, 3, 4, 5}
+```
+
+#### Intersección
+```python
+interseccion = conjunto_a.intersection(conjunto_b)
+print(interseccion)  # {3}
+```
+
+## Conclusión
+Los diccionarios y los conjuntos son estructuras de datos poderosas en Python que ofrecen formas eficientes de manejar datos. Mientras que los diccionarios son ideales para trabajar con relaciones de clave-valor, los conjuntos son útiles para operaciones que involucran grupos de elementos únicos. Dominar estas estructuras de datos expandirá significativamente tus capacidades de programación en Python.
+ 
+---
+
