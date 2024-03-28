@@ -199,3 +199,74 @@ Una vez instalado Python, el siguiente paso es configurar tu entorno de desarrol
 Configurar un entorno de desarrollo adecuado es crucial para una experiencia de programación productiva y agradable. Con Python instalado y Visual Studio Code configurado con las extensiones necesarias, estás bien equipado para comenzar a escribir programas en Python. En las siguientes secciones, exploraremos los conceptos básicos de la programación en Python y empezaremos a construir nuestros primeros programas.
 
 ---
+
+# Primeros Pasos con Python: Sintaxis Básica
+
+## Introducción
+Bienvenidos a la sección sobre los primeros pasos en Python, donde nos sumergiremos en la sintaxis básica de este poderoso lenguaje de programación. Python es conocido por su legibilidad y simplicidad, lo que facilita el aprendizaje para los principiantes.
+
+## Comentarios
+Los comentarios en Python comienzan con el símbolo `#`. Todo lo que sigue a este símbolo en la línea será ignorado por el intérprete de Python, lo que te permite agregar notas y explicaciones a tu código.
+
+```python
+# Esto es un comentario
+```
+
+## Indentación
+A diferencia de otros lenguajes, Python utiliza la indentación para delimitar bloques de código. La consistencia en la indentación es crucial, ya que una mala indentación puede llevar a errores de sintaxis.
+
+```python
+if 5 > 2:
+    print("Cinco es mayor que dos")
+```
+
+## Variables
+En Python, no necesitas declarar el tipo de una variable al crearla; el lenguaje determina el tipo automáticamente al asignarle un valor.
+
+```python
+x = 5
+nombre = "Juan"
+```
+
+## Tipos de Datos Básicos
+Python tiene varios tipos de datos estándar que son comúnmente usados:
+- Números: `int`, `float`
+- Texto: `str`
+- Booleano: `bool` (True, False)
+
+```python
+edad = 30             # int
+altura = 1.75         # float
+nombre = "Ana"        # str
+es_estudiante = True  # bool
+```
+
+## Operadores Básicos
+Python incluye una variedad de operadores estándar para realizar cálculos matemáticos, comparaciones y operaciones lógicas.
+
+### Matemáticos
+- Suma: `+`
+- Resta: `-`
+- Multiplicación: `*`
+- División: `/`
+
+### De Comparación
+- Igual: `==`
+- No igual: `!=`
+- Mayor que: `>`
+- Menor que: `<`
+
+### Lógicos
+- and
+- or
+- not
+
+## Funciones Básicas
+Python tiene un conjunto de funciones incorporadas. Por ejemplo, `print()` se usa para enviar texto a la salida estándar.
+
+```python
+print("Hola, mundo")
+```
+
+## Conclusión
+Con estas bases de la sintaxis de Python, estás listo para comenzar a explorar más sobre la programación en Python. La simplicidad y claridad de Python lo hacen ideal para principiantes, permitiéndote concentrarte en aprender conceptos de programación sin la complejidad de una sintaxis complicada.
