@@ -77,7 +77,6 @@ Hoy, Python es uno de los lenguajes de programación más populares en el mundo.
 
 > Conclusión: La historia de Python es una de innovación constante y crecimiento comunitario. Desde sus humildes comienzos hasta convertirse en un pilar del desarrollo de software moderno, Python ha demostrado ser un lenguaje versátil y poderoso. Ahora, pasemos a explorar más sobre la filosofía que guía su diseño y uso.
 
----
 
 ## 1.2 Filosofía y Aplicaciones de Python
 
@@ -114,7 +113,6 @@ Python también se utiliza en el desarrollo de videojuegos, ofreciendo librería
 
 > Conclusión: La combinación de una filosofía de diseño enfocada en la claridad y la simplicidad, junto con una amplia gama de aplicaciones prácticas, hace de Python un lenguaje de programación excepcionalmente poderoso y popular. Su comunidad activa y el soporte constante aseguran que Python seguirá siendo una herramienta vital en el mundo del desarrollo de software por años venideros.
 
----
 
 ## 1.3 Instalación de Python en Windows y Mac
 
@@ -156,8 +154,6 @@ Para verificar la instalación en Mac:
 2. Escribe `python3 --version` para ver la versión de Python que se ha instalado.
 
 > Conclusión: Con Python correctamente instalado en tu computadora, estás listo para comenzar a explorar todo lo que este poderoso lenguaje de programación tiene para ofrecer. En la siguiente sección, configuraremos tu entorno de desarrollo para que puedas comenzar a escribir tus primeros programas en Python.
-
----
 
 ## 1.4 Configuración del Entorno de Desarrollo
 
@@ -270,7 +266,6 @@ print("Hola, mundo")
 
 > Conclusión: Con estas bases de la sintaxis de Python, estás listo para comenzar a explorar más sobre la programación en Python. La simplicidad y claridad de Python lo hacen ideal para principiantes, permitiéndote concentrarte en aprender conceptos de programación sin la complejidad de una sintaxis complicada.
 
----
 
 ## 2.2 Tipos de Datos en Python
 
