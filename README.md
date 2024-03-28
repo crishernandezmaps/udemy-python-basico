@@ -270,3 +270,88 @@ print("Hola, mundo")
 
 ## Conclusión
 Con estas bases de la sintaxis de Python, estás listo para comenzar a explorar más sobre la programación en Python. La simplicidad y claridad de Python lo hacen ideal para principiantes, permitiéndote concentrarte en aprender conceptos de programación sin la complejidad de una sintaxis complicada.
+
+---
+
+# Tipos de Datos en Python
+
+## Introducción
+Continuando con nuestro curso de Python para principiantes, esta sección se centra en los tipos de datos fundamentales en Python: números, cadenas de texto y booleanos. Estos tipos de datos son los bloques de construcción básicos utilizados en todos los programas de Python.
+
+## Números
+Python soporta varios tipos de números, incluidos enteros (`int`) y de punto flotante (`float`). Veamos cómo trabajar con estos tipos de números.
+
+### Enteros
+Los enteros son números sin punto decimal. Pueden ser positivos o negativos.
+
+```python
+edad = 25
+print(edad)
+```
+
+### Flotantes
+Los números de punto flotante tienen un punto decimal y pueden representar fracciones además de números enteros.
+
+```python
+altura = 1.75
+print(altura)
+```
+
+## Cadenas de Texto
+Las cadenas de texto (`str`) se utilizan para representar texto. Puedes definirlas usando comillas simples (`'`) o dobles (`"`).
+
+```python
+nombre = "Juan"
+saludo = 'Hola, ' + nombre
+print(saludo)
+```
+
+### Multilínea
+Para cadenas de texto que abarcan múltiples líneas, utiliza tres comillas dobles o simples.
+
+```python
+mensaje = """Este es un mensaje
+que abarca varias
+líneas."""
+print(mensaje)
+```
+
+## Booleanos
+Los valores booleanos (`bool`) representan verdadero o falso y son fundamentales en las operaciones lógicas.
+
+```python
+es_estudiante = True
+tiene_credencial = False
+print(es_estudiante)
+print(tiene_credencial)
+```
+
+## Operaciones con Tipos de Datos
+Cada tipo de dato tiene operaciones específicas que se pueden realizar con él. Por ejemplo, puedes sumar números, concatenar cadenas de texto y realizar operaciones lógicas con booleanos.
+
+### Operaciones Numéricas
+
+```python
+suma = 5 + 3
+print(suma)
+```
+
+### Concatenación de Cadenas
+
+```python
+nombre_completo = "Juan" + " " + "Pérez"
+print(nombre_completo)
+```
+
+### Operaciones Booleanas
+
+```python
+resultado = es_estudiante and tiene_credencial
+print(resultado)
+```
+
+## Conclusión
+Entender los tipos de datos básicos en Python y cómo operar con ellos es fundamental para cualquier programador. En la siguiente sección, exploraremos estructuras de datos más complejas que te permitirán almacenar y manipular colecciones de datos.
+
+---
+
