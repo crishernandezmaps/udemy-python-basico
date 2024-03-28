@@ -1117,3 +1117,128 @@ class Punto:
 
 ---
 
+# 7 Manejo de Archivos en Python
+
+## 7.1 Lectura y Escritura de Archivos
+
+### 7.1.1 Introducción
+El manejo eficiente de archivos es una habilidad crucial en programación. Python proporciona varias funciones integradas para crear, leer, actualizar y eliminar archivos.
+
+### 7.1.2 Abrir Archivos
+Para trabajar con archivos en Python, primero necesitamos abrirlos usando la función `open()`. Esta función requiere el nombre del archivo y el modo de apertura como argumentos.
+
+#### 7.1.2.1 Modos de Apertura Comunes
+- `'r'`: Lectura (por defecto).
+- `'w'`: Escritura (sobrescribe el contenido).
+- `'a'`: Añadir (añade al final del archivo).
+- `'r+'`: Lectura y escritura.
+
+### 7.1.3 Lectura de Archivos
+Para leer el contenido de un archivo, primero lo abrimos en modo de lectura y luego utilizamos métodos como `.read()`, `.readline()` o `.readlines()`.
+
+#### 7.1.3.1 Ejemplo de Lectura Completa
+```python
+with open('archivo.txt', 'r') as archivo:
+    contenido = archivo.read()
+    print(contenido)
+```
+
+#### 7.1.3.2 Ejemplo de Lectura Línea por Línea
+```python
+with open('archivo.txt', 'r') as archivo:
+    for linea in archivo:
+        print(linea, end='')
+```
+
+### 7.1.4 Escritura en Archivos
+Para escribir en un archivo, lo abrimos en modo de escritura. Si el archivo no existe, se crea.
+
+#### 7.1.4.1 Escribir en un Archivo
+```python
+with open('nuevo_archivo.txt', 'w') as archivo:
+    archivo.write("Hola, Python.\n")
+    archivo.write("Adiós, Python.")
+```
+
+#### 7.1.4.2 Añadir Contenido a un Archivo Existente
+```python
+with open('nuevo_archivo.txt', 'a') as archivo:
+    archivo.write("\nUna línea adicional.")
+```
+
+### 7.1.5 Uso de `with`
+El uso de `with` para abrir archivos gestiona automáticamente el cierre del archivo una vez que el bloque de código indentado se completa, incluso si ocurren excepciones.
+
+> Conclusión: La lectura y escritura de archivos en Python es sencilla gracias a las funciones integradas y el manejo de contexto con `with`. Estas operaciones son fundamentales para la manipulación de datos persistentes y la interacción con otros sistemas y aplicaciones.
+
+## 7.2 Trabajo con Archivos en Diferentes Formatos
+
+### 7.2.1 Introducción
+Python proporciona poderosas herramientas y módulos para trabajar con diferentes formatos de archivos, permitiendo leer, escribir y manipular datos en formatos como texto plano, CSV y JSON.
+
+### 7.2.2 Archivos de Texto
+El trabajo con archivos de texto es directo en Python, utilizando las funciones básicas de apertura, lectura y escritura que ya hemos discutido.
+
+#### 7.2.2.1 Escribir en un Archivo de Texto
+```python
+with open('ejemplo.txt', 'w') as archivo:
+    archivo.write("Hola desde un archivo de texto!")
+```
+
+#### 7.2.2.2 Leer de un Archivo de Texto
+```python
+with open('ejemplo.txt', 'r') as archivo:
+    contenido = archivo.read()
+    print(contenido)
+```
+
+### 7.2.3 Archivos CSV
+Para trabajar con archivos CSV, Python ofrece el módulo `csv`, que facilita la lectura y escritura de estos archivos.
+
+#### 7.2.3.1 Leer de un Archivo CSV
+```python
+import csv
+
+with open('ejemplo.csv', mode='r') as archivo:
+    lector = csv.reader(archivo)
+    for fila in lector:
+        print(fila)
+```
+
+#### 7.2.3.2 Escribir en un Archivo CSV
+```python
+import csv
+
+datos = [['Nombre', 'Edad'], ['Juan', 30], ['Ana', 25]]
+
+with open('ejemplo.csv', mode='w', newline='') as archivo:
+    escritor = csv.writer(archivo)
+    escritor.writerows(datos)
+```
+
+### 7.2.4 Archivos JSON
+El módulo `json` en Python permite codificar y decodificar datos en formato JSON, facilitando el trabajo con este formato ampliamente utilizado para el intercambio de datos.
+
+#### 7.2.4.1 Leer de un Archivo JSON
+```python
+import json
+
+with open('ejemplo.json', 'r') as archivo:
+    datos = json.load(archivo)
+    print(datos)
+```
+
+#### 7.2.4.2 Escribir en un Archivo JSON
+```python
+import json
+
+datos = {"nombre": "Juan", "edad": 30}
+
+with open('ejemplo.json', 'w') as archivo:
+    json.dump(datos, archivo)
+```
+
+> Conclusión: El manejo de archivos en diferentes formatos es esencial para muchas aplicaciones de Python, desde la manipulación de datos hasta la configuración y almacenamiento de información persistente. Utilizar los módulos `csv` y `json` de Python simplifica enormemente estas tareas, permitiendo a los desarrolladores centrarse en la lógica de sus aplicaciones en lugar de los detalles de bajo nivel del manejo de archivos.
+
+---
+
