@@ -651,3 +651,174 @@ print(matriz)
 
 ---
 
+# 4. Control de Flujo
+## 4.1 Sentencias condicionales (`if`, `elif`, `else`)
+
+## 4.2 Introducción
+Las sentencias condicionales son fundamentales en cualquier lenguaje de programación, permitiendo a los programas ejecutar diferentes acciones basadas en condiciones específicas. Python utiliza `if`, `elif`, y `else` para manejar la lógica condicional.
+
+## 4.3 Sentencia `if`
+La sentencia `if` se usa para ejecutar un bloque de código si, y solo si, una condición específica es verdadera.
+
+```python
+edad = 20
+if edad >= 18:
+    print("Eres mayor de edad.")
+```
+
+## 4.4 Sentencia `else`
+La sentencia `else` complementa a `if`, ejecutando un bloque de código cuando la condición del `if` es falsa.
+
+```python
+if edad < 18:
+    print("Eres menor de edad.")
+else:
+    print("Eres mayor de edad.")
+```
+
+## 4.5 Sentencia `elif`
+`elif` (abreviatura de "else if") permite verificar múltiples expresiones para ser verdaderas y ejecutar un bloque de código tan pronto como una de las condiciones se evalúa como verdadera.
+
+```python
+if edad < 13:
+    print("Eres un niño.")
+elif edad < 18:
+    print("Eres un adolescente.")
+else:
+    print("Eres adulto.")
+```
+
+## 4.6 Combinando Condicionales
+Puedes combinar `if`, `elif`, y `else` para crear lógicas condicionales complejas.
+
+### 4.6.1 Ejemplo
+```python
+puntuacion = 85
+
+if puntuacion >= 90:
+    print("Excelente")
+elif puntuacion >= 80:
+    print("Bien")
+elif puntuacion >= 70:
+    print("Suficiente")
+else:
+    print("Mejor suerte la próxima vez")
+```
+
+> Conclusión: Las sentencias condicionales `if`, `elif`, y `else` son herramientas poderosas en Python que te permiten controlar el flujo de tus programas con precisión. A través de su uso, puedes asegurar que ciertos bloques de código se ejecuten solo bajo condiciones específicas, lo que es esencial para la toma de decisiones en la programación.
+
+
+## 4.2 Bucles (`for`, `while`)
+
+### 4.2.1 Introducción
+Los bucles son estructuras de control fundamentales en cualquier lenguaje de programación, permitiendo ejecutar un bloque de código repetidamente bajo ciertas condiciones. Python ofrece dos tipos de bucles: `for` y `while`.
+
+### 4.2.2 Bucle `for`
+El bucle `for` en Python se utiliza para iterar sobre una secuencia (que puede ser una lista, una tupla, un diccionario, un conjunto o una cadena).
+
+#### 4.2.2.1 Ejemplo con Lista
+```python
+frutas = ["manzana", "banana", "cereza"]
+for fruta in frutas:
+    print(fruta)
+```
+
+#### 4.2.2.2 Ejemplo con `range()`
+```python
+for i in range(5):
+    print(i)
+```
+
+### 4.2.3 Bucle `while`
+El bucle `while` ejecuta un conjunto de instrucciones mientras una condición sea verdadera.
+
+#### 4.2.3.1 Ejemplo Básico
+```python
+contador = 1
+while contador <= 5:
+    print(contador)
+    contador += 1
+```
+
+### 4.2.4 Control de Bucles
+Python ofrece declaraciones de control de bucles como `break` y `continue` para modificar el comportamiento de los bucles `for` y `while`.
+
+#### 4.2.4.1 Uso de `break`
+`break` se utiliza para salir del bucle más cercano.
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+#### 4.2.4.2 Uso de `continue`
+`continue` se utiliza para saltar el resto del código dentro del bucle para la iteración actual y continuar con la siguiente.
+
+```python
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+> Conclusión: Los bucles `for` y `while` son herramientas esenciales en Python que permiten ejecutar código repetidamente hasta que se cumpla una condición específica. Combinados con declaraciones de control como `break` y `continue`, ofrecen un control flexible sobre el flujo de ejecución de tu programa, permitiéndote manejar complejas lógicas de repetición de manera eficiente.
+
+## 4.3 Manejo de Excepciones
+
+### 4.3.1 Introducción
+El manejo de excepciones es un aspecto crucial de la programación en Python, permitiendo a los desarrolladores controlar errores de manera elegante y continuar la ejecución del programa incluso cuando ocurren problemas inesperados.
+
+### 4.3.2 Estructura Básica
+La estructura básica para manejar excepciones en Python utiliza `try`, `except`, y opcionalmente `finally`.
+
+#### 4.3.2.1 Uso de `try` y `except`
+```python
+try:
+    # Intenta ejecutar este bloque de código
+    resultado = 10 / 0
+except ZeroDivisionError:
+    # Ejecuta este bloque si hay una división por cero
+    print("¡Error! División por cero.")
+```
+
+#### 4.3.2.2 Capturando Múltiples Excepciones
+Puedes capturar múltiples tipos de excepciones en un solo bloque `except` o usando múltiples bloques `except`.
+
+```python
+try:
+    # Código que puede lanzar más de un tipo de excepción
+    resultado = 10 / "manzana"
+except ZeroDivisionError:
+    print("División por cero.")
+except TypeError:
+    print("Tipo de dato no válido para la operación.")
+```
+
+#### 4.3.2.3 Uso de `finally`
+El bloque `finally` se ejecuta siempre, independientemente de si se lanzó una excepción o no, siendo útil para realizar tareas de limpieza.
+
+```python
+try:
+    resultado = 10 / 2
+except ZeroDivisionError:
+    print("División por cero.")
+finally:
+    print("Este bloque se ejecuta siempre.")
+```
+
+#### 4.3.2.4 Uso de `else`
+El bloque `else` se ejecuta si no se lanzó ninguna excepción dentro del bloque `try`.
+
+```python
+try:
+    resultado = 10 / 2
+except ZeroDivisionError:
+    print("División por cero.")
+else:
+    print("La división fue exitosa.")
+```
+
+> Conclusión: El manejo adecuado de excepciones es fundamental para desarrollar aplicaciones robustas y resistentes a errores. Utilizar `try`, `except`, `finally`, y `else` permite a los programas manejar situaciones inesperadas de manera controlada, evitando la terminación abrupta y permitiendo la recuperación de errores.
+
