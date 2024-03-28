@@ -355,3 +355,189 @@ Entender los tipos de datos básicos en Python y cómo operar con ellos es funda
 
 ---
 
+# Operadores en Python
+
+## Introducción
+Avanzando en nuestro curso de Python para principiantes, ahora exploraremos los operadores en Python. Los operadores permiten realizar operaciones sobre variables y valores. Python divide los operadores en varias categorías: aritméticos, de comparación y lógicos.
+
+## Operadores Aritméticos
+Los operadores aritméticos se utilizan con valores numéricos para realizar operaciones matemáticas comunes.
+
+### Suma (`+`)
+```python
+resultado = 10 + 5
+print(resultado)  # Salida: 15
+```
+
+### Resta (`-`)
+```python
+resultado = 10 - 5
+print(resultado)  # Salida: 5
+```
+
+### Multiplicación (`*`)
+```python
+resultado = 10 * 5
+print(resultado)  # Salida: 50
+```
+
+### División (`/`)
+```python
+resultado = 10 / 5
+print(resultado)  # Salida: 2.0
+```
+
+### Módulo (`%`)
+```python
+resultado = 10 % 3
+print(resultado)  # Salida: 1
+```
+
+### Potencia (`**`)
+```python
+resultado = 2 ** 3
+print(resultado)  # Salida: 8
+```
+
+### División Entera (`//`)
+```python
+resultado = 10 // 3
+print(resultado)  # Salida: 3
+```
+
+## Operadores de Comparación
+Los operadores de comparación se usan para comparar dos valores.
+
+### Igual (`==`)
+```python
+resultado = (10 == 5)
+print(resultado)  # Salida: False
+```
+
+### No igual (`!=`)
+```python
+resultado = (10 != 5)
+print(resultado)  # Salida: True
+```
+
+### Mayor que (`>`)
+```python
+resultado = (10 > 5)
+print(resultado)  # Salida: True
+```
+
+### Menor que (`<`)
+```python
+resultado = (10 < 5)
+print(resultado)  # Salida: False
+```
+
+### Mayor o igual que (`>=`)
+```python
+resultado = (10 >= 10)
+print(resultado)  # Salida: True
+```
+
+### Menor o igual que (`<=`)
+```python
+resultado = (10 <= 10)
+print(resultado)  # Salida: True
+```
+
+## Operadores Lógicos
+Los operadores lógicos se utilizan para combinar declaraciones condicionales.
+
+### and
+```python
+resultado = (True and True)
+print(resultado)  # Salida: True
+```
+
+### or
+```python
+resultado = (True or False)
+print(resultado)  # Salida: True
+```
+
+### not
+```python
+resultado = not(True)
+print(resultado)  # Salida: False
+```
+
+## Conclusión
+Los operadores en Python son herramientas esenciales que permiten realizar operaciones matemáticas, comparar valores y ejecutar operaciones lógicas. Dominar su uso es fundamental para la programación efectiva en Python. En la próxima sección, avanzaremos hacia estructuras de control de flujo, donde aplicaremos estos operadores en contextos más complejos.
+
+---
+
+# Estructuras de Datos en Python: Listas y Tuplas
+
+## Introducción
+Continuando con nuestro curso de Python para principiantes, esta sección cubre dos estructuras de datos fundamentales: las listas y las tuplas. Ambas son cruciales para almacenar colecciones de datos en Python, pero se utilizan en diferentes contextos debido a sus características únicas.
+
+## Listas
+Las listas en Python son colecciones ordenadas y modificables. Permiten almacenar una lista de elementos, que pueden ser de diferentes tipos de datos.
+
+### Creación de Listas
+```python
+frutas = ["manzana", "banana", "cereza"]
+print(frutas)
+```
+
+### Acceso a Elementos
+```python
+print(frutas[1])  # Accede al segundo elemento: banana
+```
+
+### Modificar Valores
+```python
+frutas[1] = "aguacate"
+print(frutas)  # Cambia "banana" por "aguacate"
+```
+
+### Añadir Elementos
+```python
+frutas.append("naranja")
+print(frutas)  # Añade "naranja" al final de la lista
+```
+
+### Eliminar Elementos
+```python
+frutas.remove("manzana")
+print(frutas)  # Elimina "manzana" de la lista
+```
+
+## Tuplas
+Las tuplas son colecciones ordenadas y no modificables. Se utilizan para almacenar múltiples elementos en una sola variable.
+
+### Creación de Tuplas
+```python
+vehiculos = ("bicicleta", "moto", "coche")
+print(vehiculos)
+```
+
+### Acceso a Elementos
+```python
+print(vehiculos[2])  # Accede al tercer elemento: coche
+```
+
+### Intento de Modificación (Produce Error)
+Intentar modificar una tupla resultará en un error, ya que las tuplas son inmutables.
+
+```python
+# vehiculos[1] = "autobús"  # Esto causaría un TypeError
+```
+
+### Tuplas Unicampo
+Para crear una tupla con un solo elemento, necesitas incluir una coma al final.
+
+```python
+mi_tupla = ("manzana",)
+print(type(mi_tupla))  # Salida: <class 'tuple'>
+```
+
+## Conclusión
+Las listas y las tuplas son estructuras de datos fundamentales en Python con sus propios conjuntos de operaciones y usos. Las listas son ideales para colecciones de datos que necesitan ser modificadas, mientras que las tuplas se utilizan mejor para colecciones de datos inmutables. Comprender cómo y cuándo usar cada una de estas estructuras te permitirá gestionar colecciones de datos de manera más efectiva en tus programas de Python.
+
+---
+
