@@ -822,3 +822,123 @@ else:
 
 > Conclusión: El manejo adecuado de excepciones es fundamental para desarrollar aplicaciones robustas y resistentes a errores. Utilizar `try`, `except`, `finally`, y `else` permite a los programas manejar situaciones inesperadas de manera controlada, evitando la terminación abrupta y permitiendo la recuperación de errores.
 
+---
+
+# 5 Funciones y Módulos en Python
+
+## 5.1 Definición, Parámetros y argumentos
+
+### 5.1.1 Introducción
+Las funciones no solo ayudan a organizar y reutilizar código, sino que también permiten la flexibilidad mediante el uso de parámetros y argumentos, facilitando la creación de código generalizado y adaptable.
+
+### 5.1.2 Parámetros
+Los parámetros son variables especificadas en la definición de la función. Actúan como "placeholders" para los valores que se pasan a la función al momento de su llamada.
+
+#### 5.1.2.1 Ejemplo de Parámetros
+```python
+def imprimir_mensaje(mensaje):
+    print(mensaje)
+```
+
+### 5.1.3 Argumentos
+Los argumentos son los valores reales que se pasan a la función cuando se llama. Estos valores se asignan a los parámetros correspondientes de la función.
+
+#### 5.1.3.1 Ejemplo de Argumentos
+```python
+imprimir_mensaje("Hola, este es un mensaje para imprimir.")
+```
+
+### 5.1.4 Argumentos por Palabra Clave
+Permiten especificar argumentos por el nombre del parámetro, lo que puede hacer que el código sea más claro y legible.
+
+#### 5.1.4.1 Ejemplo de Argumentos por Palabra Clave
+```python
+def describir_persona(nombre, edad):
+    print(f"{nombre} tiene {edad} años.")
+
+describir_persona(nombre="Ana", edad=25)
+```
+
+### 5.1.5 Parámetros Predeterminados
+Puedes asignar valores predeterminados a los parámetros. Si al llamar a la función no se proporciona un argumento para ese parámetro, se utiliza el valor predeterminado.
+
+#### 5.1.5.1 Ejemplo de Parámetros Predeterminados
+```python
+def describir_animal(tipo, nombre="Sin nombre"):
+    print(f"El {tipo} se llama {nombre}.")
+
+describir_animal("perro", "Rex")
+describir_animal("gato")
+```
+
+### 5.1.6 Argumentos de Longitud Variable
+Si una función puede tomar un número variable de argumentos, se usa `*args` para parámetros no clave y `**kwargs` para parámetros clave.
+
+#### 5.1.6.1 Ejemplo de `*args`
+```python
+def sumar_numeros(*args):
+    suma = sum(args)
+    print(f"La suma es: {suma}")
+
+sumar_numeros(1, 2, 3, 4)
+```
+
+#### 5.1.6.2 Ejemplo de `**kwargs`
+```python
+def describir_persona(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+describir_persona(nombre="Carlos", edad=30, ciudad="Madrid")
+```
+
+> Conclusión: Entender los parámetros y argumentos es esencial para aprovechar el poder de las funciones en Python. Permiten que las funciones sean más dinámicas y versátiles, facilitando la creación de soluciones más generales y reutilizables.
+
+## 5.2 Importación de módulos y paquetes
+
+### 5.2.1 Introducción
+Los módulos en Python son archivos de Python que contienen un conjunto de funciones, clases y variables, así como código ejecutable. Un paquete es una colección de módulos en directorios que le dan una estructura de paquete al espacio de nombres de Python.
+
+### 5.2.2 Importación de Módulos
+Python permite importar módulos para utilizar sus funciones, clases y variables dentro de otro script.
+
+#### 5.2.2.1 Importación Básica
+Para importar un módulo completo, se utiliza la palabra clave `import`.
+
+```python
+import math
+print(math.sqrt(16))  # Imprime: 4.0
+```
+
+#### 5.2.2.2 Importación Específica
+Si solo necesitas una o unas pocas funciones de un módulo, puedes importarlas específicamente con `from ... import ...`.
+
+```python
+from math import sqrt
+print(sqrt(16))  # Imprime: 4.0
+```
+
+### 5.2.3 Alias en Importaciones
+Puedes asignar un alias a tus importaciones para acortar el nombre de un módulo o función.
+
+#### 5.2.3.1 Ejemplo de Alias
+```python
+import math as m
+print(m.sqrt(16))  # Imprime: 4.0
+```
+
+### 5.2.4 Importación de Paquetes
+Un paquete es una manera de estructurar los módulos de Python utilizando "directorios con puntos". Un paquete puede contener subpaquetes y módulos.
+
+#### 5.2.4.1 Ejemplo de Importación de Paquetes
+Suponiendo que tienes un paquete llamado `mipaquete` con un subpaquete `subpaquete` y un módulo `modulo`.
+
+```python
+from mipaquete.subpaquete import modulo
+modulo.mi_funcion()
+```
+
+### 5.2.5  Uso de `__init__.py`
+Los archivos `__init__.py` se utilizan para inicializar paquetes en Python. Facilitan que Python interprete los directorios como paquetes. Pueden estar vacíos pero son necesarios para que Python maneje el directorio como un paquete.
+
+> Conclusión: La importación de módulos y paquetes es fundamental en Python, ya que promueve la reutilización de código y ayuda a mantener los programas organizados. Al utilizar importaciones, puedes acceder a una vasta biblioteca de módulos estándar de Python, así como a módulos de terceros disponibles a través del Python Package Index (PyPI).
