@@ -942,3 +942,178 @@ modulo.mi_funcion()
 Los archivos `__init__.py` se utilizan para inicializar paquetes en Python. Facilitan que Python interprete los directorios como paquetes. Pueden estar vacíos pero son necesarios para que Python maneje el directorio como un paquete.
 
 > Conclusión: La importación de módulos y paquetes es fundamental en Python, ya que promueve la reutilización de código y ayuda a mantener los programas organizados. Al utilizar importaciones, puedes acceder a una vasta biblioteca de módulos estándar de Python, así como a módulos de terceros disponibles a través del Python Package Index (PyPI).
+ 
+---
+
+# 6 Programación Orientada a Objetos (POO) en Python
+
+## 6.1 Clases y Objetos
+
+### 6.1.1 Introducción
+La Programación Orientada a Objetos (POO) es un paradigma de programación que utiliza objetos y clases para organizar el código. Facilita la creación de programas más flexibles y reutilizables.
+
+### 6.1.2 Clases
+Una clase en Python es como un "blueprint" para crear objetos. Define un conjunto de atributos y métodos que los objetos creados a partir de la clase pueden utilizar.
+
+#### 6.1.2.1 Definición de una Clase
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def saludar(self):
+        print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
+```
+
+`__init__` es un método especial que se llama automáticamente al crear un objeto. `self` representa la instancia de la clase y permite acceder a los atributos y métodos de la clase.
+
+### 6.1.3 Objetos
+Un objeto es una instancia de una clase. Cuando se crea un objeto, se ejecuta el método `__init__`, y el objeto tiene acceso a los atributos y métodos definidos en la clase.
+
+#### 6.1.3.1 Creación de Objetos
+```python
+persona1 = Persona("Juan", 30)
+persona2 = Persona("Ana", 25)
+```
+
+#### 6.1.3.2 Llamada a Métodos de Objeto
+```python
+persona1.saludar()  # Imprime: Hola, mi nombre es Juan y tengo 30 años.
+persona2.saludar()  # Imprime: Hola, mi nombre es Ana y tengo 25 años.
+```
+
+### 6.1.4 Modificación de Atributos
+Los atributos de un objeto pueden modificarse directamente o mediante métodos definidos en la clase.
+
+#### 6.1.4.1 Modificación Directa
+```python
+persona1.edad = 31
+persona1.saludar()  # Imprime: Hola, mi nombre es Juan y tengo 31 años.
+```
+
+#### 6.1.4.2 Modificación Mediante Métodos
+```python
+class Persona:
+    # Resto de la clase...
+
+    def establecer_edad(self, edad):
+        self.edad = edad
+
+persona1.establecer_edad(32)
+persona1.saludar()  # Imprime: Hola, mi nombre es Juan y tengo 32 años.
+```
+
+> Conclusión: La Programación Orientada a Objetos en Python permite a los desarrolladores crear clases con atributos y métodos específicos que pueden ser reutilizados y organizados de manera eficiente. Comprender cómo trabajar con clases y objetos es fundamental para construir programas más complejos y modulares en Python.
+
+## 6.2 Herencia y Polimorfismo
+
+### 6.2.1 Introducción
+La herencia y el polimorfismo son dos conceptos fundamentales en la Programación Orientada a Objetos que permiten crear una estructura de clases más eficiente y reutilizable.
+
+### 6.2.2 Herencia
+La herencia permite a una clase heredar atributos y métodos de otra clase. La clase de la que se hereda se conoce como clase base o superclase, y la clase que hereda es la clase derivada o subclase.
+
+#### 6.2.2.1 Definición de Clase Base y Subclase
+```python
+# Clase base
+class Vehiculo:
+    def __init__(self, nombre, velocidad_maxima):
+        self.nombre = nombre
+        self.velocidad_maxima = velocidad_maxima
+    
+    def mostrar_info(self):
+        print(f"Vehículo: {self.nombre}, Velocidad Máxima: {self.velocidad_maxima}")
+
+# Subclase que hereda de Vehiculo
+class Automovil(Vehiculo):
+    def __init__(self, nombre, velocidad_maxima, kilometraje):
+        super().__init__(nombre, velocidad_maxima)
+        self.kilometraje = kilometraje
+    
+    def mostrar_info(self):
+        super().mostrar_info()
+        print(f"Kilometraje: {self.kilometraje}")
+```
+
+### 6.2.3 Polimorfismo
+El polimorfismo es la capacidad de utilizar una interfaz para objetos de diferentes tipos. En el contexto de la herencia, permite que clases derivadas tengan métodos con el mismo nombre que los de sus clases base, pero con comportamientos distintos.
+
+#### 6.2.3.1 Ejemplo de Polimorfismo
+En el ejemplo anterior, `mostrar_info` se sobrescribe en `Automovil` para añadir información sobre el kilometraje, demostrando polimorfismo.
+
+```python
+vehiculo = Vehiculo("Bicicleta", 30)
+vehiculo.mostrar_info()
+
+auto = Automovil("Ford Focus", 220, 15000)
+auto.mostrar_info()
+```
+
+> Conclusión: La herencia y el polimorfismo son herramientas poderosas en POO que facilitan la reutilización de código y la implementación de interfaces flexibles. Al permitir que las subclases hereden comportamientos de sus superclases y al mismo tiempo personalicen o extiendan esos comportamientos, Python fomenta la creación de códigos más limpios y organizados.
+
+## 6.3 Encapsulamiento y Métodos Especiales
+
+### 6.3.1 Introducción
+El encapsulamiento y los métodos especiales son características clave de la POO en Python que aumentan la seguridad y la eficiencia de las clases y objetos.
+
+### 6.3.2 Encapsulamiento
+El encapsulamiento implica restringir el acceso a ciertos detalles de una clase y solo exponer lo que es necesario fuera de la clase. En Python, esto se logra a través del uso de prefijos con guión bajo (`_`) y doble guión bajo (`__`).
+
+#### 6.3.2.1 Atributos Protegidos
+Los atributos protegidos, marcados con un guión bajo (`_`), indican que deben ser accedidos solo dentro de la clase y sus subclases.
+
+```python
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self._saldo = saldo
+```
+
+#### 6.3.2.2 Atributos Privados
+Los atributos privados, marcados con doble guión bajo (`__`), son accesibles solo dentro de su clase y no son visibles para las subclases.
+
+```python
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo
+    
+    def mostrar_saldo(self):
+        print(f"El saldo de la cuenta es {self.__saldo}")
+```
+
+### 6.3.3 Métodos Especiales
+Los métodos especiales en Python son funciones que comienzan y terminan con doble guión bajo (`__`) y permiten a las clases implementar y usar operadores o funciones de Python de manera personalizada.
+
+#### 6.3.3.1  `__init__`
+Constructor de la clase, se llama automáticamente al crear un objeto.
+
+#### 6.3.3.2  `__str__`
+Define la representación en cadena de caracteres de un objeto cuando se utiliza `print()`.
+
+```python
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.__saldo = saldo
+    
+    def __str__(self):
+        return f"Cuenta de {self.titular}, Saldo: {self.__saldo}"
+```
+
+#### 6.3.3.3  `__add__`
+Permite definir cómo se suman dos objetos de la clase.
+
+```python
+class Punto:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    def __add__(self, otro):
+        return Punto(self.x + otro.x, self.y + otro.y)
+```
+
+> Conclusión: El encapsulamiento protege la integridad de los datos dentro de una clase y los métodos especiales permiten la interoperabilidad de las clases con las construcciones y operaciones de Python. Ambos son fundamentales para el diseño eficiente y seguro de clases en la programación orientada a objetos.
+
+---
+
