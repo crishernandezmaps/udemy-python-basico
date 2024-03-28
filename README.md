@@ -619,3 +619,49 @@ Los diccionarios y los conjuntos son estructuras de datos poderosas en Python qu
  
 ---
 
+# Comprensiones de Listas en Python
+
+## Introducción
+Las comprensiones de listas ofrecen una forma concisa de crear listas. Este enfoque transforma iteraciones y operaciones de filtrado sobre elementos de una lista (o cualquier iterable) en una expresión concisa y fácil de leer.
+
+## Ejemplo Básico
+Imaginemos que queremos crear una lista de los cuadrados de los números del 0 al 9.
+
+### Sin Comprensión de Lista
+```python
+cuadrados = []
+for x in range(10):
+    cuadrados.append(x**2)
+print(cuadrados)
+```
+
+### Con Comprensión de Lista
+```python
+cuadrados = [x**2 for x in range(10)]
+print(cuadrados)
+```
+
+## Filtrando Elementos
+Las comprensiones de listas también pueden incluir una condición para filtrar elementos de la lista final.
+
+### Ejemplo de Filtrado
+```python
+cuadrados_pares = [x**2 for x in range(10) if x % 2 == 0]
+print(cuadrados_pares)
+```
+
+## Comprensiones Anidadas
+Puedes anidar comprensiones de listas para realizar operaciones más complejas.
+
+### Ejemplo de Anidamiento
+```python
+# Crear una matriz 3x4 con comprensiones de listas
+matriz = [[j for j in range(4)] for i in range(3)]
+print(matriz)
+```
+
+## Conclusión
+Las comprensiones de listas son una herramienta poderosa que simplifica el código al crear nuevas listas a partir de iterables existentes. Permiten realizar bucles, operaciones matemáticas y filtrados en una sola línea de código. Su uso adecuado puede hacer que tu código sea más Pythonic, es decir, más claro, más elegante y más eficiente.
+
+---
+
