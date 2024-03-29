@@ -7,19 +7,19 @@ Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los �
 
 Quisiéra que este curso sea el primer paso en Python para personas en muchas partes del mundo, y que encuentren aquí lo que necesitan para comenzar.
 
-<div style="text-align: center; font-size: 48px;">
-  <span style="margin-right: 40px;">
+<div style="text-align: center; font-size: 60px; display: flex; justify-content: center; align-items: center;">
+  <div style="margin-right: 40px;">
     <strong>11</strong><br>
-    Experiencia
-  </span>
-  <span style="margin-right: 40px;">
+    <span style="font-size: 30px;">Experiencia</span>
+  </div>
+  <div style="margin-right: 40px;">
     <strong>5</strong><br>
-    Industrias
-  </span>
-  <span>
+    <span style="font-size: 30px;">Industrias</span>
+  </div>
+  <div>
     <strong>9</strong><br>
-    Países
-  </span>
+    <span style="font-size: 30px;">Países</span>
+  </div>
 </div>
 
 
