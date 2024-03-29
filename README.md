@@ -1,13 +1,20 @@
 ![Texto alternativo](img/portada.png)
 
-# 0 Curso de Python para Principiantes
+# 0 Presentación del curso
+
+## 0.1 Sobre el instructor: Cristian Hernández
+Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias, tales como el retail, consumo masivo, marketing,  inmobiliario y ahora deporte.
+
+Quisiéra compartir y aprender de estudiantes entusiastas, desafiantes y con ambición de aplicar diversas herramientas en su quehacer.
+
+## 0.2 Curso de Python para Principiantes
 
 Link al índice: https://github.com/crishernandezmaps/udemy-python-basico
 Link al perfil del tutor: https://crishernandezmaps.com
 
 Sumérgete en el emocionante mundo de Python con nuestro curso diseñado para transformarte en un experto en el arte de la programación. Python, conocido por su sintaxis clara y legibilidad, se ha consolidado como el lenguaje favorito para desarrolladores en campos tan diversos como el análisis de datos, la ciencia de datos, el desarrollo web, y la automatización. Nuestro curso te llevará de la mano desde los conceptos más básicos hasta las técnicas avanzadas, equipándote con todo lo necesario para dominar este poderoso lenguaje.
 
-## 0.1 ¿Qué Aprenderás?
+## 0.3 ¿Qué Aprenderás?
 - **Fundamentos de Python**: Empieza desde cero y construye una sólida comprensión de los fundamentos de Python, incluyendo variables, tipos de datos, estructuras de control, y funciones.
 - **Programación orientada a objetos**: Profundiza en temas avanzados como la Programación Orientada a Objetos (POO), el manejo de excepciones, y el trabajo con bibliotecas externas.
 - **Análisis de Datos**: Descubre cómo Python se convierte en una herramienta indispensable en el análisis de datos con la ayuda de bibliotecas como Pandas y NumPy.
@@ -15,10 +22,10 @@ Sumérgete en el emocionante mundo de Python con nuestro curso diseñado para tr
 - **Automatización**: Automatiza tareas aburridas y repetitivas, ahorrando tiempo y recursos.
 - **Proyectos Prácticos**: Refuerza lo aprendido con proyectos prácticos que simulan desafíos reales, desde el análisis de datos simples hasta la creación de una aplicación web básica.
 
-## 0.2 ¿A Quién Está Dirigido?
+## 0.4 ¿A Quién Está Dirigido?
 Este curso está diseñado tanto para principiantes que desean adentrarse en el mundo de la programación como para profesionales que buscan ampliar sus habilidades y aprovechar el poder de Python en sus proyectos.
 
-## 0.3 Al Final del Curso
+## 0.5 Al Final del Curso
 Estarás equipado con las habilidades necesarias para abordar problemas reales, analizar grandes conjuntos de datos, desarrollar aplicaciones web, y mucho más. Además, te convertirás en parte de una comunidad activa y creciente, donde el aprendizaje continuo y el intercambio de conocimientos te abrirán puertas a nuevas oportunidades.
 
 ¡Embárcate en este viaje hacia el dominio de Python y da el primer paso hacia tu futuro en tecnología hoy mismo!
