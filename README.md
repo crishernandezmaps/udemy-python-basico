@@ -22,8 +22,8 @@ Estarás equipado con las habilidades necesarias para abordar problemas reales, 
 ## 1. Introducción a Python
 - 1.1 Historia de Python
 - 1.2 Filosofía y aplicaciones
-- 1.3 Instalación de Python
-- 1.4 Configuración del entorno de desarrollo
+- 1.3 Uso de Jupyter Notebook para Python
+- 1.4 Uso de Google Colab como entorno interactivo
 
 ## 2. Primeros Pasos con Python
 - 2.1 Sintaxis básica
@@ -133,83 +133,26 @@ Python también se utiliza en el desarrollo de videojuegos, ofreciendo librería
 > Conclusión: La combinación de una filosofía de diseño enfocada en la claridad y la simplicidad, junto con una amplia gama de aplicaciones prácticas, hace de Python un lenguaje de programación excepcionalmente poderoso y popular. Su comunidad activa y el soporte constante aseguran que Python seguirá siendo una herramienta vital en el mundo del desarrollo de software por años venideros.
 
 
-## 1.3 Instalación de Python en Windows y Mac
+## 1.3 Jupyter Notebook y el uso de Google Colab como entorno interactivo en la nube para Python
+Jupyter Notebook es una aplicación web que permite crear y compartir documentos que contienen código en vivo, ecuaciones, visualizaciones y texto narrativo. Es una herramienta ideal para el aprendizaje de Python, la experimentación con algoritmos y el análisis de datos.
 
-### 1.3.1 Introducción
-Ahora que hemos explorado la historia y la filosofía de Python, así como sus aplicaciones, es momento de comenzar a usarlo. El primer paso es instalar Python en tu computadora. En esta sección, te guiaremos a través del proceso de instalación en Windows y Mac.
+### 1.3.1 Uso de Google Colab como Entorno Interactivo
+Google Colab es un servicio gratuito que integra Jupyter Notebook en la nube, permitiéndote escribir y ejecutar código de Python en tu navegador sin ninguna configuración previa. Colab está especialmente diseñado para el aprendizaje de machine learning, análisis de datos, y educación.
 
-### 1.3.2 Instalación en Windows
+### 1.3.2 Ventajas de Google Colab
+- No requiere instalación.
+- Acceso gratuito a GPUs y TPUs para el aprendizaje de machine learning.
+- Facilidad para compartir y colaborar en notebooks de forma similar a Google Docs.
 
-#### 1.3.2.1 Descarga
-1. Visita el sitio web oficial de Python, python.org, y navega hasta la sección de descargas.
-2. Elige la versión de Python recomendada para Windows y haz clic en el enlace de descarga.
-3. Una vez descargado el archivo, ejecútalo para comenzar la instalación.
+Para comenzar con Google Colab, visita:
 
-#### 1.3.2.2 Proceso de Instalación
-1. En la primera pantalla del instalador, asegúrate de marcar la opción "Add Python 3.x to PATH" para facilitar la ejecución de Python desde la línea de comandos.
-2. Haz clic en "Install Now" para comenzar la instalación con la configuración predeterminada.
-3. Espera a que el instalador finalice y luego haz clic en "Close" para completar la instalación.
+```url
+https://colab.research.google.com
+```
 
-#### 1.3.2.3 Verificación
-Para verificar que Python se ha instalado correctamente en Windows:
-1. Abre el Command Prompt (CMD) y escribe `python --version`.
-2. Si la instalación fue exitosa, verás la versión de Python que instalaste.
+y selecciona "Nuevo cuaderno" para empezar a escribir código de Python en un entorno interactivo y colaborativo.
 
-### 1.3.3 Instalación en Mac
-
-#### 1.3.3.1 Descarga
-1. Al igual que en Windows, visita python.org y dirígete a la sección de descargas.
-2. Elige la versión para macOS y descarga el paquete de instalación.
-3. Abre el archivo descargado para iniciar el proceso de instalación.
-
-#### 1.3.3.2 Proceso de Instalación
-1. Sigue las instrucciones en pantalla, que te guiarán a través de la instalación de Python en tu Mac.
-2. Es posible que se te solicite tu contraseña de administrador para autorizar la instalación.
-3. Una vez completada, Python estará disponible en tu sistema.
-
-#### 1.3.3.3 Verificación
-Para verificar la instalación en Mac:
-1. Abre el Terminal.
-2. Escribe `python3 --version` para ver la versión de Python que se ha instalado.
-
-> Conclusión: Con Python correctamente instalado en tu computadora, estás listo para comenzar a explorar todo lo que este poderoso lenguaje de programación tiene para ofrecer. En la siguiente sección, configuraremos tu entorno de desarrollo para que puedas comenzar a escribir tus primeros programas en Python.
-
-## 1.4 Configuración del Entorno de Desarrollo
-
-### 1.4.1 Introducción
-Una vez instalado Python, el siguiente paso es configurar tu entorno de desarrollo. Un buen IDE puede hacer que la programación sea más agradable y eficiente. En esta sección, te mostraremos cómo descargar e instalar Visual Studio Code (VS Code), un editor de código fuente popular y gratuito, tanto para Windows como para Mac.
-
-### 1.4.2 Descarga de Visual Studio Code
-
-#### 1.4.2.1 Para Todos los Usuarios
-1. Visita el sitio web oficial de Visual Studio Code: [code.visualstudio.com](https://code.visualstudio.com/).
-2. En la página principal, encontrarás botones de descarga para Windows, Mac y Linux. Selecciona el que corresponda a tu sistema operativo.
-
-### 1.4.3 Instalación en Windows
-
-#### 1.4.3.1 Proceso de Instalación
-1. Una vez descargado el instalador, ejecútalo.
-2. Sigue las instrucciones en pantalla, aceptando el acuerdo de licencia y eligiendo la ubicación de instalación.
-3. Es recomendable seleccionar las opciones de integración con el menú contextual y otras configuraciones recomendadas para facilitar el acceso a VS Code desde el explorador de archivos.
-4. Completa la instalación y abre Visual Studio Code.
-
-#### 1.4.3.2 Configuración para Python
-1. Con VS Code abierto, ve a la sección de extensiones (puedes usar el atajo `Ctrl+Shift+X`).
-2. Busca la extensión `Python` por Microsoft y haz clic en instalar.
-3. Una vez instalada, VS Code estará listo para desarrollar en Python, con características como el resaltado de sintaxis, la depuración y la autocompletación.
-
-### 1.4.4 Instalación en Mac
-
-#### 1.4.4.1 Proceso de Instalación
-1. Abre el paquete descargado para iniciar la instalación.
-2. Arrastra el ícono de Visual Studio Code a la carpeta de Aplicaciones para instalarlo.
-3. Abre Visual Studio Code desde la carpeta de Aplicaciones.
-
-#### 1.4.4.2 Configuración para Python
-1. Al igual que en Windows, ve a la sección de extensiones y busca la extensión `Python` por Microsoft para instalarla.
-2. Con esta extensión, podrás disfrutar de todas las funcionalidades necesarias para programar en Python de manera eficiente en tu Mac.
-
-> Conclusión: Configurar un entorno de desarrollo adecuado es crucial para una experiencia de programación productiva y agradable. Con Python instalado y Visual Studio Code configurado con las extensiones necesarias, estás bien equipado para comenzar a escribir programas en Python. En las siguientes secciones, exploraremos los conceptos básicos de la programación en Python y empezaremos a construir nuestros primeros programas.
+> Conclusión: El uso de Jupyter Notebook y Google Colab brinda una plataforma interactiva y accesible para aprender Python, experimentar con código y realizar análisis de datos complejos, todo dentro de un entorno colaborativo en la nube.
 
 ---
 
