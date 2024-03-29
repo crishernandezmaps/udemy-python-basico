@@ -22,8 +22,7 @@ Estarás equipado con las habilidades necesarias para abordar problemas reales, 
 ## 1. Introducción a Python
 - 1.1 Historia de Python
 - 1.2 Filosofía y aplicaciones
-- 1.3 Uso de Jupyter Notebook para Python
-- 1.4 Uso de Google Colab como entorno interactivo
+- 1.3 Jupyter Notebook y el uso de Google Colab como entorno interactivo en la nube para Python
 
 ## 2. Primeros Pasos con Python
 - 2.1 Sintaxis básica
