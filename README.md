@@ -3,24 +3,13 @@
 # 0 Presentación del curso
 
 ## 0.1 Sobre el instructor
-Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias, tales como el retail, consumo masivo, marketing,  inmobiliario y ahora deporte.
+Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias:
+
+> 11 Años de experiencia en ciencia de datos
+> 5 Industrias 
+> 9 Países
 
 Quisiéra que este curso sea el primer paso en Python para personas en muchas partes del mundo, y que encuentren aquí lo que necesitan para comenzar.
-
-<div style="text-align: center; font-size: 5em; display: flex; justify-content: center; align-items: center; width:100vw;">
-  <div style="margin-right: 40px;">
-    <strong>11</strong><br>
-    <span style="font-size: 30px;">Experiencia</span>
-  </div>
-  <div style="margin-right: 40px;">
-    <strong>5</strong><br>
-    <span style="font-size: 30px;">Industrias</span>
-  </div>
-  <div>
-    <strong>9</strong><br>
-    <span style="font-size: 30px;">Países</span>
-  </div>
-</div>
 
 
 ## 0.2 Curso de Python para Principiantes
