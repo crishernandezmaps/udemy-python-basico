@@ -5,7 +5,7 @@
 ## 0.1 Sobre el instructor
 Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias:
 
-- <p style="color:red; font-size:5em">11</p> Años de experiencia en ciencia de datos
+- <p style="color:red; font-size:5em">11 Años de experiencia en ciencia de datos</p> 
 - 5 Industrias 
 - 9 Países
 
