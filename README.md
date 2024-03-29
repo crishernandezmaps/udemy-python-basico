@@ -2,8 +2,8 @@
 
 # 0 Presentación del curso
 
-## 0.1 Sobre el instructor: Cristian Hernández
-Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias, tales como el retail, consumo masivo, marketing,  inmobiliario y ahora deporte.
+## 0.1 Sobre el instructor
+Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias, tales como el retail, consumo masivo, marketing,  inmobiliario y ahora deporte.
 
 Quisiéra compartir y aprender de estudiantes entusiastas, desafiantes y con ambición de aplicar diversas herramientas en su quehacer.
 
