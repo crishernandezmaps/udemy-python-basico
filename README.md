@@ -1242,3 +1242,312 @@ with open('ejemplo.json', 'w') as archivo:
 
 ---
 
+# 8 Bibliotecas Populares en Python
+
+## 8.1 NumPy para Cálculos Numéricos
+
+### 8.1.1 Introducción
+NumPy es una biblioteca fundamental para la computación científica en Python. Proporciona un objeto de matriz multidimensional de alto rendimiento y herramientas para trabajar con estas matrices.
+
+### 8.1.2 Instalación de NumPy
+Antes de poder utilizar NumPy, necesitas instalarlo. Generalmente, se puede instalar utilizando pip:
+
+```bash
+pip install numpy
+```
+
+### 8.1.3 Importación de NumPy
+Para comenzar a utilizar NumPy, primero debes importarlo en tu programa.
+
+```python
+import numpy as np
+```
+
+### 8.1.4 Creación de Arrays
+NumPy permite crear arrays de varias dimensiones. Los arrays son una parte central de NumPy y se utilizan para realizar operaciones matemáticas de forma eficiente.
+
+#### 8.1.4.1 Creación de un Array Simple
+```python
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+```
+
+#### 8.1.4.2 Creación de un Array Multidimensional
+```python
+arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr_2d)
+```
+
+### 8.1.5 Operaciones Básicas
+NumPy facilita la realización de operaciones matemáticas, incluyendo operaciones elemento por elemento, operaciones matriciales y más.
+
+#### 8.1.5.1 Operaciones Elemento por Elemento
+```python
+# Suma
+print(arr + 5)
+
+# Multiplicación
+print(arr * 2)
+```
+
+#### 8.1.5.2 Funciones Matemáticas
+```python
+# Seno
+print(np.sin(arr))
+
+# Logaritmo
+print(np.log(arr))
+```
+
+#### 8.1.5.3 Estadísticas Básicas
+```python
+print("Media:", np.mean(arr))
+print("Mediana:", np.median(arr))
+print("Desviación estándar:", np.std(arr))
+```
+
+### 8.1.6 Indexación y Segmentación
+NumPy ofrece múltiples formas de indexar y segmentar arrays, lo que permite seleccionar y manipular datos específicos dentro de un array.
+
+#### 8.1.6.1 Ejemplo de Indexación
+```python
+print(arr[2])  # Accede al tercer elemento
+```
+
+#### 8.1.6.2 Ejemplo de Segmentación
+```python
+print(arr[1:4])  # Accede del segundo al cuarto elemento
+```
+
+> Conclusión: NumPy es una herramienta esencial para cualquier persona que trabaje con cálculos numéricos en Python. Ofrece estructuras de datos eficientes y operaciones de alto rendimiento que hacen que el análisis de datos y la computación científica sean mucho más eficientes y efectivos.
+
+## 8.2 Pandas para Análisis de Datos
+
+### 8.2.1 Introducción
+Pandas es una biblioteca de Python que proporciona estructuras de datos y herramientas de análisis de datos de alto rendimiento y fácil de usar. Es fundamental para la manipulación y el análisis de datos numéricos y temporales.
+
+### 8.2.2 Instalación de Pandas
+Al igual que NumPy, Pandas puede instalarse fácilmente mediante pip:
+
+```bash
+pip install pandas
+```
+
+### 8.2.3 Importación de Pandas
+Para usar Pandas, primero debes importarlo en tu script de Python.
+
+```python
+import pandas as pd
+```
+
+### 8.2.4 Estructuras de Datos Principales
+Pandas introduce dos estructuras de datos fundamentales: `DataFrame` y `Series`.
+
+#### 8.2.4.1 Series
+Una `Series` es un arreglo unidimensional que puede almacenar cualquier tipo de datos.
+
+```python
+s = pd.Series([3, -5, 7, 4], index=['a', 'b', 'c', 'd'])
+print(s)
+```
+
+#### 8.2.4.2 DataFrame
+Un `DataFrame` es una estructura de datos bidimensional con columnas de diferentes tipos de datos. Es similar a una hoja de cálculo o una tabla SQL.
+
+```python
+data = {
+    'Country': ['Belgium', 'India', 'Brazil'],
+    'Capital': ['Brussels', 'New Delhi', 'Brasília'],
+    'Population': [11190846, 1303171035, 207847528]
+}
+df = pd.DataFrame(data)
+print(df)
+```
+
+### 8.2.5 Carga de Datos
+Pandas facilita la carga de datos desde diferentes formatos de archivos, como CSV, Excel y bases de datos SQL.
+
+#### 8.2.5.1 Cargar Datos desde un Archivo CSV
+```python
+df = pd.read_csv('path/to/your/file.csv')
+print(df.head())  # Muestra las primeras 5 filas
+```
+
+### 8.2.6 Análisis Básico de Datos
+Una vez que los datos están en un DataFrame, Pandas ofrece numerosas funciones para explorar y analizar los datos.
+
+#### 8.2.6.1 Estadísticas Descriptivas
+```python
+print(df.describe())  # Resumen estadístico para datos numéricos
+```
+
+#### 8.2.6.2 Selección y Filtrado
+```python
+# Selección de una columna
+print(df['Capital'])
+
+# Filtrado por condición
+print(df[df['Population'] > 1000000000])
+```
+
+### 8.2.7 Manipulación de Datos
+Pandas permite manipular los datos de varias formas, como agregar nuevas columnas, modificar existentes y fusionar DataFrames.
+
+#### 8.2.7.1 Agregar Nuevas Columnas
+```python
+df['Continent'] = ['Europe', 'Asia', 'South America']
+print(df)
+```
+
+> Conclusión: Pandas es una herramienta indispensable para el análisis de datos en Python, proporcionando estructuras de datos potentes y flexibles que facilitan la manipulación, limpieza y análisis de grandes conjuntos de datos. Con Pandas, los científicos de datos pueden realizar desde tareas simples hasta análisis complejos de manera eficiente.
+
+## 8.3 Matplotlib y Seaborn para Visualización de Datos
+
+### 8.3.1 Introducción
+La visualización de datos es crucial para entender las complejidades y patrones subyacentes en los datos. Python ofrece varias bibliotecas de visualización, siendo Matplotlib y Seaborn dos de las más populares y ampliamente utilizadas.
+
+### 8.3.2 Matplotlib
+Matplotlib es una biblioteca de visualización de datos de bajo nivel en Python que permite la creación de una amplia gama de gráficos estáticos, animados e interactivos.
+
+#### 8.3.2.1 Instalación de Matplotlib
+```bash
+pip install matplotlib
+```
+
+#### 8.3.2.2 Ejemplo Básico con Matplotlib
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.xlabel('Eje X')
+plt.ylabel('Eje Y')
+plt.title('Gráfico Simple')
+plt.show()
+```
+
+### 8.3.3 Seaborn
+Seaborn es una biblioteca de visualización de datos de alto nivel basada en Matplotlib que proporciona una interfaz más amigable y estilizada para la generación de gráficos estadísticos.
+
+#### 8.3.3.1 Instalación de Seaborn
+```bash
+pip install seaborn
+```
+
+#### 8.3.3.2 Ejemplo Básico con Seaborn
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Datos de ejemplo
+tips = sns.load_dataset("tips")
+
+# Crear un gráfico de barras
+sns.barplot(x='day', y='total_bill', data=tips)
+plt.title('Facturación por Día en un Restaurante')
+plt.show()
+```
+
+### 8.3.4 Personalización de Gráficos
+Tanto Matplotlib como Seaborn ofrecen amplias opciones para personalizar gráficos, desde colores y estilos hasta la inclusión de múltiples subgráficos.
+
+#### 8.3.4.1 Personalización con Matplotlib
+```python
+plt.plot(x, y, color='red', linestyle='--')
+plt.xlim([0, 5])
+plt.ylim([0, 35])
+plt.show()
+```
+
+#### 8.3.4.2 Personalización con Seaborn
+```python
+sns.set_style('whitegrid')
+sns.barplot(x='day', y='total_bill', data=tips, palette='Blues_d')
+plt.show()
+```
+
+> Conclusión: Matplotlib y Seaborn son herramientas esenciales para la visualización de datos en Python. Matplotlib ofrece control detallado sobre los gráficos, mientras que Seaborn permite crear visualizaciones complejas con menos código y ofrece estilos predeterminados que hacen que los gráficos sean visualmente atractivos. La elección entre Matplotlib y Seaborn dependerá de las necesidades específicas del proyecto y las preferencias personales.
+
+## 8.4 Requests para Acceso a Web
+
+### 8.4.1 Introducción
+La biblioteca Requests es una herramienta esencial en Python para enviar solicitudes HTTP de manera sencilla. Facilita tanto el envío de solicitudes a servidores web como la recepción de respuestas de estos, siendo crucial para la interacción con APIs o la automatización de la recopilación de datos de internet.
+
+### 8.4.2 Instalación de Requests
+Antes de poder utilizar Requests, necesitas instalarlo utilizando pip:
+
+```bash
+pip install requests
+```
+
+### 8.4.3 Realizar una Solicitud GET
+La solicitud GET se utiliza para solicitar datos de un recurso específico.
+
+#### 8.4.3.1 Ejemplo de Solicitud GET
+```python
+import requests
+
+url = 'https://api.github.com'
+response = requests.get(url)
+
+# Imprime el código de estado de la respuesta
+print(response.status_code)
+
+# Imprime el contenido de la respuesta
+print(response.content)
+```
+
+### 8.4.4 Realizar una Solicitud POST
+La solicitud POST se utiliza para enviar datos para ser procesados a un recurso específico.
+
+#### 8.4.4.1 Ejemplo de Solicitud POST
+```python
+import requests
+
+url = 'http://httpbin.org/post'
+datos = {'clave': 'valor'}
+
+response = requests.post(url, data=datos)
+
+# Imprime el código de estado de la respuesta
+print(response.status_code)
+
+# Imprime el contenido de la respuesta
+print(response.text)
+```
+
+### 8.4.5 Parámetros en Solicitudes GET
+Puedes enviar parámetros con tus solicitudes GET para modificar la respuesta o solicitar información específica.
+
+#### 8.4.5.1 Ejemplo de Parámetros en GET
+```python
+import requests
+
+url = 'http://httpbin.org/get'
+parametros = {'clave': 'valor', 'otra_clave': 'otro_valor'}
+
+response = requests.get(url, params=parametros)
+
+print(response.url)
+print(response.text)
+```
+
+### 8.4.6 Manejo de Respuestas
+La biblioteca Requests hace que sea fácil acceder a la información de las respuestas, como el contenido, los encabezados y más.
+
+#### 8.4.6.1 Ejemplo de Manejo de Respuestas
+```python
+import requests
+
+response = requests.get('https://api.github.com')
+
+# Acceder a los encabezados de la respuesta
+print(response.headers)
+
+# Acceder al contenido de la respuesta como JSON
+print(response.json())
+```
+
+> Conclusión: Requests es una herramienta poderosa y fácil de usar para realizar solicitudes HTTP en Python. Ofrece una interfaz simple para enviar todo tipo de solicitudes HTTP y manejar respuestas, lo que la hace indispensable para la programación web y la interacción con APIs en Python.
