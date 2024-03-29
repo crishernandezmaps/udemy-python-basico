@@ -7,12 +7,28 @@ Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los �
 
 Quisiéra que este curso sea el primer paso en Python para personas en muchas partes del mundo, y que encuentren aquí lo que necesitan para comenzar.
 
+<div style="text-align: center; font-size: 48px;">
+  <span style="margin-right: 40px;">
+    <strong>11</strong><br>
+    Experiencia
+  </span>
+  <span style="margin-right: 40px;">
+    <strong>5</strong><br>
+    Industrias
+  </span>
+  <span>
+    <strong>9</strong><br>
+    Países
+  </span>
+</div>
+
+
 ## 0.2 Curso de Python para Principiantes
 
 Link al índice: https://github.com/crishernandezmaps/udemy-python-basico
 Link al perfil del tutor: https://crishernandezmaps.com
 
-Este curso está diseñado para que inicies el camino a ser un experto en el arte de la programación. Python, conocido por su sintaxis clara y legibilidad, se ha consolidado como el lenguaje favorito para desarrolladores en campos tan diversos como la ciencia de datos, el desarrollo web, y la automatización. Este curso te llevará de la mano desde los conceptos más básicos técnicas avanzadas, equipándote con todo lo necesario para dominar este poderoso lenguaje.
+Este curso está diseñado para que inicies el camino a ser un experto en el arte de la programación. Python, conocido por su sintaxis clara y por buscar ser legible. Se ha consolidado como el lenguaje favorito para desarrolladores en campos tan diversos como la ciencia de datos, el desarrollo web, y la automatización. Este curso te llevará de la mano desde los conceptos más básicos técnicas avanzadas, equipándote con todo lo necesario para dominar este poderoso lenguaje.
 
 ## 0.3 ¿Qué Aprenderás?
 - **Fundamentos de Python**: Empieza desde cero y construye una sólida comprensión de los fundamentos de Python, incluyendo variables, tipos de datos, estructuras de control, y funciones.
