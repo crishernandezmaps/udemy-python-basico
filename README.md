@@ -3,7 +3,7 @@
 # 0 Presentación del curso
 
 ## 0.1 Sobre el instructor
-Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos diez años a la programación en Python para resolver problemas de diversas industrias:
+Mi nombre es **Cristian Hernández**, científico de datos. Me he dedicado los últimos años a la programación en Python para resolver problemas de diversas industrias, en muchos países
 
 - 11 Años de experiencia en ciencia de datos
 - 5 Industrias
