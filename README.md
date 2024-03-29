@@ -1,6 +1,6 @@
 # Curso de Python para Principiantes
 
-(https://github.com/crishernandezmaps/udemy-python-basico)[Indice]
+https://github.com/crishernandezmaps/udemy-python-basico
 
 Sumérgete en el emocionante mundo de Python con nuestro curso diseñado para transformarte en un experto en el arte de la programación. Python, conocido por su sintaxis clara y legibilidad, se ha consolidado como el lenguaje favorito para desarrolladores en campos tan diversos como el análisis de datos, la ciencia de datos, el desarrollo web, y la automatización. Nuestro curso te llevará de la mano desde los conceptos más básicos hasta las técnicas avanzadas, equipándote con todo lo necesario para dominar este poderoso lenguaje.
 
