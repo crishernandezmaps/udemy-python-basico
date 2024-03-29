@@ -1,3 +1,5 @@
+![Texto alternativo](img/portada.png)
+
 # 0 Curso de Python para Principiantes
 
 Link al índice: https://github.com/crishernandezmaps/udemy-python-basico
